@@ -1,8 +1,13 @@
 extends layout
 
 block content
-  each article in articles
-    .article
-      a(href='/blog/article/' + article.url)
-        h3.title= article.title
-      span.date= article.date
+  #article-wrapper
+    each article in articles
+      .article
+        a(href='/blog/article/' + article.url)
+          h3.title= article.title
+        span.date= article.date
+        if article.tags
+          ul.tags
+            each tag in article.tags
+              li.tag= tag

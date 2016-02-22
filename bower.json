@@ -1,0 +1,22 @@
+{
+  "name": "carpet",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Wahid Rahim <wahidrahim@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wahidrahim/carpet",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "highlight": "^9.1.0"
+  }
+}

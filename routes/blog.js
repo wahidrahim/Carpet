@@ -10,7 +10,8 @@ router.get('/', function(req, res) {
     articles: articles.map(function(article) {
       return {
         title: article.title,
-        date: moment(new Date(article.date)).format('MMM Do YYYY'),
+        date: moment(new Date(article.date)).format('MMM Do, YYYY'),
+        tags: article.tags,
         url: article.url
       }
     })
@@ -22,7 +23,7 @@ router.get('/article/:url', function(req, res) {
 
   res.render('article', {
     title: article.title,
-    date: moment(new Date(article.date)).format('MMM Do YYYY'),
+    date: moment(new Date(article.date)).format('MMM Do, YYYY'),
     body: marked(article.body)
   });
 });

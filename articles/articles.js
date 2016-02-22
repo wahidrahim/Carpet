@@ -12,7 +12,8 @@ fs.readdirSync(ARTICLES_DIR).forEach(function(file) {
   var article = fs.readFileSync(path.join(ARTICLES_DIR, file), 'utf8');
 
   article = format(article);
-  articles.push(article);
+  if (article.publish)
+    articles.push(article);
 });
 
 articles.sort(function(a, b) {
@@ -26,6 +27,8 @@ function format(article) {
   fmt.title = fma.attributes.title;
   fmt.date = fma.attributes.date;
   fmt.url = fma.attributes.url;
+  fmt.tags = fma.attributes.tags;
+  fmt.publish = fma.attributes.publish;
   fmt.body = fma.body;
 
   if (fmt.url === undefined)
