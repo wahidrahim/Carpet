@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  each article in articles
+    .article
+      a(href='/blog/article/' + article.url)
+        h3.title= article.title
+      span.date= article.date
