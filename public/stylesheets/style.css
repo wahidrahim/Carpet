@@ -7,8 +7,16 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
+a:hover {
+  color: #ff4800;
+}
+
+#carpet {
+  margin: 0;
+}
 .article {
   border-radius: 2px;
   border-bottom: 1px solid;
@@ -37,12 +45,13 @@ a {
   margin-top: 50px;
 }
 
-.body, pre code {
+.body {
   font-size: 18px;
 }
 
 pre code {
   font-family: monaco, consolas, "lucida console", monospace;
+  font-size: 17px;
 }
 
 #article-wrapper {
