@@ -12,7 +12,14 @@ fs.readdirSync(ARTICLES_DIR).forEach(function(file) {
   var article = fs.readFileSync(path.join(ARTICLES_DIR, file), 'utf8');
 
   article = format(article);
-  if (article.publish)
+
+  // throw errors if required front-matter data is not available
+  if (article.title === undefined)
+    throw new Error('Article must have a title front-matter data. FILE' + file);
+  if (isNaN(new Date(article.date).valueOf()))
+    throw new Error('Article must have a valid date front-matter data. FILE: ' + file);
+
+  if (article.publish === true)
     articles.push(article);
 });
 
