@@ -1,12 +1,3 @@
----
-title: How to use Carpet blog engine
-date: Feb 22, 2016
-tags:
-  - carpet
-  - tutorial
-publish: true
----
-
 Carpet is a simple static blog engine, that lists and views articles written in markdown.
 
 To use carpet, simply clone it from the git repository from
