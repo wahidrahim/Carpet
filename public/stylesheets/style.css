@@ -17,6 +17,12 @@ a:hover {
 #carpet {
   margin: 0;
 }
+
+#wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .article {
   border-radius: 2px;
   border-bottom: 1px solid;
@@ -54,10 +60,7 @@ code {
   font-size: 17px;
 }
 
-#article-wrapper {
-  width: 700px;
-  margin: 0 auto;
-}
+
 
 .hljs {
   white-space: pre;
