@@ -1,3 +1,6 @@
+Carpet
+======
+
 Carpet is a simple static blog engine, that lists and views articles written in markdown.
 
 To use carpet, simply clone it from the git repository from
@@ -25,12 +28,8 @@ By default Carpet runs on port 3000, however if you want to run it on a differen
 PORT=1337 npm start
 ```
 
-Now visit `localhost:1337/blog` to see Carpet running. You should see the articles posted
+Now visit `localhost:1337` to see Carpet running. You should see the articles posted
 frm the `_articles/` folder, the ones that are specified as `publish: true`.
-
-*Note: if you would like to change the url to access carpet, for example at the root path `/`
-instead of `/blog`, then simply change the path at line 24 of `app.js`. In the near future I'll
-be adding a configurations file to easily change these settings*
 
 #### How to compose new articles
 

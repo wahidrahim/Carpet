@@ -7,7 +7,7 @@ block content
   #article-wrapper
     each article in articles
       .article
-        a(href='/blog/article/' + article.url)
+        a(href='/article/' + article.url)
           h3.title= article.title
         span.date= article.date
         if article.tags
