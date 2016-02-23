@@ -1,4 +1,4 @@
-[Carpet](https://rocky-waters-20836.herokuapp.com/)
+[Carpet](https://carpetblog.herokuapp.com/)
 ===
 
 Carpet is a simple static blog engine, that lists and views articles written in markdown.
